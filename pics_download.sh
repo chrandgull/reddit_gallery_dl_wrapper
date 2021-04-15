@@ -29,7 +29,6 @@ if [ ${lastCharInDownloadDirectory} == "/" ]; then
    downloadDir=`echo ${downloadDir} | sed 's/.$//'`
 fi
 
-exit 0
 #Set up paths
 
 archiveName=${downloadDir}/${subreddit}/archive
