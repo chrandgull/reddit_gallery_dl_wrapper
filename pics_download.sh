@@ -64,8 +64,6 @@ fi
 
 #Run command
 
-#echo "About to run pwd command"
-
 command gallery-dl --verbose --simulate --download-archive ${archiveName} --dest ${downloadDir} reddit.com/r/${subreddit}
 
 #Cleanup. Lockfile should be there, but check just in case.

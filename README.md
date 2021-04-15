@@ -11,6 +11,7 @@ To download all of the current posts on /r/funny, pass two operands.
 ./pics_download.sh funny my_download_directory
 
 Operand one: The subreddit you want to download
+
 Operand two: The directory you want to place your downloaded files in.
 
 ## Usage notes
