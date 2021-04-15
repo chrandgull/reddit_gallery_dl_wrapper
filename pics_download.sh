@@ -20,13 +20,16 @@ fi
 
 #If user specified a trailing slash on download directory name, get rid of it. 
 
-lastCharInDownloadDirectory=`echo ${downloadDir} | cut -c1`
+
+
+numberOfCharsInDirectory=`echo -n ${downloadDir} | wc -m`
+lastCharInDownloadDirectory=`echo -n ${downloadDir} | cut -c${numberOfCharsInDirectory}`
 
 if [ ${lastCharInDownloadDirectory} == "/" ]; then
    downloadDir=`echo ${downloadDir} | sed 's/.$//'`
 fi
 
-
+exit 0
 #Set up paths
 
 archiveName=${downloadDir}/${subreddit}/archive
