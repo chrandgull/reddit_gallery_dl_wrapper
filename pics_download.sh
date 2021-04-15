@@ -64,7 +64,7 @@ fi
 
 #Run command
 
-command gallery-dl --verbose --simulate --download-archive ${archiveName} --dest ${downloadDir} reddit.com/r/${subreddit}
+command gallery-dl --quiet --download-archive ${archiveName} --dest ${downloadDir} reddit.com/r/${subreddit}
 
 #Cleanup. Lockfile should be there, but check just in case.
 
